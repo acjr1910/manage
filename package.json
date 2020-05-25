@@ -1,7 +1,7 @@
 {
-  "name": "html-sass-js-boilerplate",
+  "name": "manage-landing-page",
   "version": "1.0.0",
-  "description": "Project Description",
+  "description": "Manage Landing Page",
   "main": "./config/webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,9 +15,8 @@
   "author": "ajnior - Agnaldo Cardoso Junior",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/account/repo-name"
+    "url": "https://github.com/ajnior/manage"
   },
-  "homepage": "https://github.com/account/repo-name#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
