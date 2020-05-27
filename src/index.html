@@ -10,32 +10,51 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | Manage landing page</title>
+    <title>Manage Landing Page</title>
   </head>
-  <body>
+  <body id="grid-container" class="background">
     <header id="header" class="header">
-      <div>
-        <!-- Logo -->
-        <img src="./images/logo.svg" />
-      </div>
-      <div class="header__menu-items">
-        <h3>Pricing</h3>
-        <h3>Product</h3>
-        <h3>About Us</h3>
-        <h3>Carrers</h3>
-        <h3>Community</h3>
-      </div>
-      <div>
-        <!-- Menu Icon -->
-        <img src="./images/icon-hamburger.svg" />
-      </div>
+      <img src="./images/logo.svg" alt="Logo" />
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">Pricing</li>
+          <li class="header__nav-item">Product</li>
+          <li class="header__nav-item">About Us</li>
+          <li class="header__nav-item">Carrers</li>
+          <li class="header__nav-item">Community</li>
+        </ul>
+      </nav>
+      <img src="./images/icon-hamburger.svg" alt="Menu" />
     </header>
     <main id="main">
-      Get Started Bring everyone together to build better products. Manage makes
-      it simple for software teams to plan day-to-day tasks while keeping the
-      larger team goals in view. Get Started What’s different about Manage?
-      Manage provides all the functionality your team needs, without the
-      complexity. Our software is tailor-made for modern digital product teams.
+      <div class="intro">
+        <div class="intro__image-container">
+          <img
+            src="./images/illustration-intro.svg"
+            alt="Intro Image with Graphs"
+          />
+        </div>
+        <div class="intro__text-container">
+          <h1>
+            Bring everyone together to build better products.
+          </h1>
+          <p>
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <button>Get Started</button>
+        </div>
+      </div>
+
+      <h2>
+        What’s different about Manage?
+      </h2>
+      <p>
+        Manage provides all the functionality your team needs, without the
+        complexity. Our software is tailor-made for modern digital product
+        teams.
+      </p>
+
       01 Track company-wide progress See how your day-to-day tasks fit into the
       wider vision. Go from tracking progress at the milestone level all the way
       done to the smallest of details. Never lose sight of the bigger picture
@@ -54,11 +73,12 @@
       them to everyone I talk to!” Shanai Gough “Their software allows us to
       track, manage and collaborate on our projects from anywhere. It keeps the
       whole team in-sync without being intrusive.” Get Started Simplify how your
-      team works today. Get Started Home Pricing Products About Us Careers
-      Community Privacy Policy Updates in your inbox… Go Copyright 2020. All
-      Rights Reserved
+      team works today.
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+      Get Started Home Pricing Products About Us Careers Community Privacy
+      Policy Updates in your inbox… Go Copyright 2020. All Rights Reserved
+    </footer>
   </body>
   <script src="./js/index.js"></script>
 </html>

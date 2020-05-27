@@ -1,6 +1,13 @@
-#header,
+#grid-container {
+  display: grid;
+  grid-template-columns: 6.5% repeat(4, 1fr) 6.5%;
+}
+
 #main,
+#header {
+  grid-column: 2 / 6;
+}
+
 #footer {
-  padding-right: 6.5%;
-  padding-left: 6.5%;
+  grid-column: 1 / -1;
 }

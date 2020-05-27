@@ -38,5 +38,22 @@ img {
 }
 
 body {
-  background: white;
+  background-color: white;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+p {
+  font-weight: 300;
+  color: $dark-grayish-blue;
 }
