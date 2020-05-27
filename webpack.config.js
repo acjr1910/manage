@@ -1,14 +1,14 @@
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const path = require("path");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require('path');
 
 module.exports = {
-  mode: "development",
-  entry: "./src/js/index.js",
+  mode: 'development',
+  entry: './src/js/index.js',
   devServer: {
-    open: "http://localhost:3000",
+    open: 'http://localhost:3000',
     port: 3000,
   },
   module: {
@@ -17,29 +17,29 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
+            loader: 'html-loader',
             options: {
               attributes: {
                 list: [
                   {
-                    tag: "img",
-                    attribute: "src",
-                    type: "src",
+                    tag: 'img',
+                    attribute: 'src',
+                    type: 'src',
                   },
                   {
-                    tag: "img",
-                    attribute: "srcset",
-                    type: "srcset",
+                    tag: 'img',
+                    attribute: 'srcset',
+                    type: 'srcset',
                   },
                   {
-                    tag: "img",
-                    attribute: "data-src",
-                    type: "src",
+                    tag: 'img',
+                    attribute: 'data-src',
+                    type: 'src',
                   },
                   {
-                    tag: "img",
-                    attribute: "data-srcset",
-                    type: "srcset",
+                    tag: 'img',
+                    attribute: 'data-srcset',
+                    type: 'srcset',
                   },
                 ],
               },
@@ -54,12 +54,16 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           {
-            loader: "css-loader",
+            loader: 'css-loader',
           },
           {
-            loader: "sass-loader",
+            loader: 'resolve-url-loader',
+          },
+          {
+            loader: 'sass-loader',
             options: {
-              implementation: require("sass"),
+              implementation: require('sass'),
+              sourceMap: true,
             },
           },
         ],
@@ -68,9 +72,9 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           {
-            loader: "file-loader",
+            loader: 'file-loader',
             options: {
-              name: "images/[name].[ext]",
+              name: 'images/[name].[ext]',
             },
           },
         ],
@@ -80,14 +84,14 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "bundle.css",
+      filename: 'bundle.css',
     }),
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: './src/index.html',
     }),
   ],
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
   },
 };
