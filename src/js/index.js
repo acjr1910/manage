@@ -1,1 +1,1 @@
-import styles from "../sass/index.scss";
+import styles from '../styles/index.scss';
