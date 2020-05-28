@@ -1,6 +1,7 @@
 #grid-container.main-background {
-  background-image: url('../../../images/bg-tablet-pattern.svg');
+  background-image: url('../../../images/bg-tablet-pattern.svg'),
+    url('../../../images/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
-  background-position: 56px -120px;
-  background-size: 460px;
+  background-position: 56px -120px, 242px 520px;
+  background-size: 460px, 300px;
 }
