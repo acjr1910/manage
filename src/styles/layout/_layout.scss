@@ -20,8 +20,7 @@
 
 .intro,
 .about,
-.reviews,
-.last-call {
+.reviews {
   grid-column: 2 / 6;
 }
 
@@ -46,4 +45,10 @@
   &__paragraph {
     margin-bottom: 3.4rem;
   }
+}
+
+// Last Call
+
+.last-call {
+  grid-column: 1 / -1;
 }

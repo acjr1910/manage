@@ -1,0 +1,12 @@
+.last-call {
+  margin: 2rem auto 0 auto;
+  padding: 4rem 3.4rem;
+  background-color: $bright-red;
+  background-image: url('../../../images/bg-simplify-section-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: 0px 30px;
+  &__heading {
+    color: white;
+    line-height: 2.8rem;
+  }
+}
