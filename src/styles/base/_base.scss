@@ -6,6 +6,11 @@ html {
   font-family: 'Be Vietnam', sans-serif;
 }
 
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
 *,
 *:before,
 *:after {
@@ -72,4 +77,8 @@ p {
   line-height: 1.875rem;
   text-align: center;
   margin: 1rem 0;
+}
+
+.reviews .slider-container {
+  margin-bottom: 4rem;
 }

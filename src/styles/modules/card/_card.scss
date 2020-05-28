@@ -1,0 +1,32 @@
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__avatar {
+    max-width: 74px;
+    margin: 0 auto;
+    position: relative;
+    top: 2.5rem;
+  }
+
+  &__text-content {
+    background: $very-light-gray;
+    padding-top: 2.8rem;
+  }
+
+  &__title {
+    color: $dark-blue;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+  }
+
+  &__paragraph {
+    max-width: 90%;
+    margin: 1rem auto 0.8rem auto;
+    padding-bottom: 2.5rem;
+    line-height: 1.8rem;
+  }
+}
