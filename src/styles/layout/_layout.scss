@@ -1,19 +1,49 @@
+// Shared
 #grid-container {
   display: grid;
   grid-template-columns: 6.5% repeat(4, 1fr) 6.5%;
 }
 
-#main,
 #header {
   grid-column: 2 / 6;
+}
+
+#main {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 6.5% repeat(4, 1fr) 6.5%;
 }
 
 #footer {
   grid-column: 1 / -1;
 }
 
+.intro,
+.about,
+.reviews,
+.last-call {
+  grid-column: 2 / 6;
+}
+
+.about,
+.reviews {
+  margin-top: 3.6rem;
+}
+
+// Topic
+.topic {
+  grid-column: 2 / -1;
+}
+
 .intro {
   &__text-container {
     text-align: center;
+  }
+}
+
+// About
+.about {
+  &__paragraph {
+    margin-bottom: 3.4rem;
   }
 }
