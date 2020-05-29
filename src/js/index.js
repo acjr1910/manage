@@ -1,13 +1,10 @@
 import styles from '../styles/index.scss';
+import Menu from './components/Menu/index';
+import Slider from './components/Slider/index';
 
-(function ($) {
-  const config = {
-    // centerMode: true, // maybe use on desktop
-    slidesToShow: 1,
-    arrows: false,
-    dots: true,
-  };
-  $(document).ready(function () {
-    $('.slider-container').slick(config);
+(function () {
+  window.addEventListener('DOMContentLoaded', (event) => {
+    Slider(jQuery);
+    Menu();
   });
-})(jQuery);
+})();
