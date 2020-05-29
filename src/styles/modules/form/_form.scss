@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  &__input,
+  &__submit-button {
+    border: none;
+    border-radius: 25px;
+    padding: 0.875rem 1.5rem;
+  }
+  input {
+    flex-basis: 70%;
+    margin-right: 0.525rem;
+    color: $dark-grayish-blue;
+    &::placeholder {
+      color: $dark-grayish-blue;
+      font-weight: 300;
+      letter-spacing: 0.02rem;
+    }
+  }
+
+  &__submit-button {
+    flex-basis: 26%;
+    background: $bright-red;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+}
