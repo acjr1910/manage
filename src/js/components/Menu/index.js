@@ -42,11 +42,15 @@ function Menu() {
   }
 
   function setCloseIcon() {
-    return (menuElement.src = 'images/icon-close.svg');
+    menuElement.src = 'images/icon-close.svg';
+    menuElement.alt = 'Close Icon';
+    return;
   }
 
   function setHamburgerIcon() {
-    return (menuElement.src = 'images/icon-hamburger.svg');
+    menuElement.src = 'images/icon-hamburger.svg';
+    menuElement.alt = 'Menu Icon';
+    return;
   }
 
   function showNav() {
