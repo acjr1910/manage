@@ -3,14 +3,19 @@ function Menu() {
     isOpen: false,
   };
 
-  const menuElement = document.querySelector('.header__menu');
+  const menuElement = document.querySelector('.header__menu-icon');
   const navElement = document.querySelector('.header__nav');
+  const navItemsList = document.querySelectorAll('.header__nav-item');
   const bodyElement = document.querySelector('body');
   const menuInitialClass = 'header__nav';
   const menuShowClass = 'header__nav--show';
 
   function addListener() {
-    return menuElement.addEventListener('click', toggleState);
+    menuElement.addEventListener('click', toggleState);
+    navItemsList.forEach((navItem) => {
+      navItem.addEventListener('click', toggleState);
+    });
+    return;
   }
 
   function toggleState() {
