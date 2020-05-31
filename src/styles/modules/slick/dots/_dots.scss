@@ -4,11 +4,13 @@
 
 .reviews .slick-dots li button::before {
   font-size: 0px;
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   border: 2px solid $bright-red;
   border-radius: 25px;
   opacity: 1;
+  top: 6px;
+  left: 6px;
 }
 
 .reviews .slick-dots li.slick-active button::before {
