@@ -13,7 +13,9 @@ function Menu() {
   function addListener() {
     menuElement.addEventListener('click', toggleState);
     navItemsList.forEach((navItem) => {
-      navItem.addEventListener('click', toggleState);
+      console.log(navItem);
+      const id = navItem.attributes.to.value;
+      navItem.addEventListener('click', () => handleNavItemClick(id));
     });
     return;
   }
@@ -22,6 +24,12 @@ function Menu() {
     Object.assign({}, state, (state.isOpen = !state.isOpen));
     handleMenu();
     return;
+  }
+
+  function handleNavItemClick(id) {
+    toggleState();
+    const element = document.getElementById(id);
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
   }
 
   function makeOverlayDiv() {
