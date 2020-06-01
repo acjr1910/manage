@@ -2,6 +2,41 @@
   background: $very-dark-blue;
   color: white;
 
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  &__form-container {
+    flex-basis: 30%;
+  }
+
+  &__sitemap-container {
+    flex-basis: 35%;
+  }
+
+  &__medialinks-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-self: flex-start;
+    @media (min-width: $desktop) {
+      flex-basis: 20%;
+    }
+  }
+
+  &__medialinks-list {
+    @media (min-width: $desktop) {
+      max-width: 80%;
+    }
+  }
+
+  &__paragraph-container {
+    flex-basis: 100%;
+  }
+
   &__sitemap-list {
     margin: 2.5rem 2.2rem;
     display: flex;
@@ -13,6 +48,9 @@
       font-weight: 300;
       margin: 0.565rem 0;
       flex-basis: 40%;
+    }
+    @media (min-width: $desktop) {
+      margin: 0 2.2rem;
     }
   }
 
@@ -26,12 +64,23 @@
         max-width: 30px;
       }
     }
+    @media (min-width: $desktop) {
+      padding: 0;
+      li {
+        img {
+          max-width: 24px;
+        }
+      }
+    }
   }
 
   &__logo {
     display: flex;
     margin: 3.4rem auto 2.5rem;
     filter: hue-rotate(180deg) invert(1) contrast(2);
+    @media (min-width: $desktop) {
+      margin: 0 auto 2.5rem 0;
+    }
   }
 
   &__paragraph {

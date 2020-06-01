@@ -37,6 +37,11 @@ ul {
   list-style: none;
 }
 
+li,
+button {
+  cursor: pointer;
+}
+
 img {
   max-width: 100%;
   height: auto;
