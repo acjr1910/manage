@@ -8,6 +8,7 @@ function Slider($) {
       {
         breakpoint: 769,
         settings: {
+          dots: false,
           centerMode: true,
           centerPadding: '10px',
           slidesToShow: 3,

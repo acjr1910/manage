@@ -2,6 +2,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop) {
+  }
 
   &__avatar {
     max-width: 74px;
@@ -28,5 +32,9 @@
     margin: 1rem auto 0.8rem auto;
     padding-bottom: 2.5rem;
     line-height: 1.8rem;
+    @media (min-width: $desktop) {
+      font-size: 14px;
+      max-width: 90%;
+    }
   }
 }
