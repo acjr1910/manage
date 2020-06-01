@@ -9,4 +9,17 @@
     color: white;
     line-height: 2.8rem;
   }
+  @media (min-width: $desktop) {
+    padding: 4rem 5rem;
+    background-image: url('../../../images/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: -55% 100%;
+    &__heading {
+      max-width: 40%;
+      text-align: left;
+    }
+    .button {
+      margin: 0;
+    }
+  }
 }

@@ -1,9 +1,19 @@
 function Slider($) {
   const config = {
-    // centerMode: true, // maybe use on desktop
-    slidesToShow: 1,
+    mobileFirst: true,
     arrows: false,
     dots: true,
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          centerMode: true,
+          centerPadding: '10px',
+          slidesToShow: 3,
+        },
+      },
+    ],
   };
   $('.slider-container').slick(config);
 }

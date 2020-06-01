@@ -18,9 +18,7 @@
   grid-column: 1 / -1;
 }
 
-.intro,
-.about,
-.reviews {
+.intro {
   grid-column: 2 / 6;
 }
 
@@ -29,28 +27,86 @@
   margin-top: 3.6rem;
 }
 
-// Topic
-.topic {
-  grid-column: 2 / -1;
-}
-
 .intro {
-  &__text-container {
-    text-align: center;
+  grid-column: 2 / -1;
+  @media (max-width: $tablet) {
+    &__text-container {
+      text-align: center;
+    }
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    &__image-container {
+      width: 100%;
+    }
+    &__text-container {
+      h1,
+      p {
+        text-align: left;
+      }
+      h1 {
+        font-size: 3rem;
+        padding-right: 20%;
+        line-height: 3.6rem;
+        margin-bottom: 1.6rem;
+      }
+      p {
+        padding-right: 35%;
+        margin-bottom: 2rem;
+      }
+      .button {
+        margin: 0;
+      }
+    }
   }
 }
 
 // About
 .about {
+  grid-column: 2 / -1;
+  &__intro {
+    margin-right: 6.5%;
+  }
   &__paragraph {
     margin-bottom: 3.4rem;
+  }
+  @media (min-width: $desktop) {
+    grid-column: 2 / 6;
+    display: flex;
+    &__heading,
+    &__paragraph {
+      text-align: left;
+    }
+    &__paragraph {
+      padding-right: 15%;
+    }
+  }
+}
+
+// Reviews
+.reviews {
+  grid-column: 2 / 6;
+
+  @media (min-width: $desktop) {
+    grid-column: 1 / -1;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
   }
 }
 
 // Last Call
-
 .last-call {
   grid-column: 1 / -1;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .footer {
