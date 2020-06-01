@@ -4,7 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   &__input,
-  &__submit-button {
+  .button {
     border: none;
     border-radius: 25px;
     padding: 0.875rem 1.5rem;
@@ -20,12 +20,14 @@
     }
   }
 
-  &__submit-button {
+  .button {
     flex-basis: 26%;
-    background: $bright-red;
-    color: white;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.75rem;
+    box-shadow: none;
+    @media (min-width: $desktop) {
+      margin: 0;
+    }
   }
 }

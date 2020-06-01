@@ -3,7 +3,7 @@
   border: none;
   border-radius: 25px;
   padding: 0.975rem 2.4rem;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.75rem;
   box-shadow: 0px 14px 12px -9px $button-shadow-color;
   letter-spacing: 0.02rem;
@@ -12,11 +12,19 @@
 }
 
 .orange-button {
-  background: $bright-red;
+  background-color: $bright-red;
   color: white;
+  transition: background-color 0.1s linear;
+  &:hover {
+    background-color: $bright-red-hover;
+  }
 }
 
 .white-button {
   background: white;
   color: $bright-red;
+  transition: color 0.1s linear;
+  &:hover {
+    color: $bright-red-hover-text;
+  }
 }

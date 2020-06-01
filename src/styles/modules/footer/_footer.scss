@@ -42,15 +42,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     li {
       cursor: pointer;
       font-size: 14px;
       font-weight: 300;
       margin: 0.565rem 0;
       flex-basis: 40%;
+      transition: color 0.1s linear;
     }
     @media (min-width: $desktop) {
       margin: 0 2.2rem;
+      li {
+        &:hover {
+          color: $bright-red;
+        }
+      }
     }
   }
 
@@ -62,6 +69,10 @@
       img {
         width: 100%;
         max-width: 30px;
+        &:hover {
+          filter: invert(45%) sepia(76%) saturate(2775%) hue-rotate(331deg)
+            brightness(90%) contrast(120%);
+        }
       }
     }
     @media (min-width: $desktop) {

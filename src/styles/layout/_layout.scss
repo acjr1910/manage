@@ -18,17 +18,14 @@
   grid-column: 1 / -1;
 }
 
-.intro {
-  grid-column: 2 / 6;
-}
-
 .about,
 .reviews {
   margin-top: 3.6rem;
 }
 
 .intro {
-  grid-column: 2 / -1;
+  grid-column: 2 / 6;
+
   @media (max-width: $tablet) {
     &__text-container {
       text-align: center;
